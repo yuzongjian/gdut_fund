@@ -1,0 +1,390 @@
+/*
+-------------------------------
+Site:        易臣OA系统 金黄色皮肤样式 该文件将其它样式文件中涉及到字体、边框、背景的样式抽取出来，集中放在一起，便于进行样式替换。
+Updated:     2010-11-25
+Updated by:
+-------------------------------
+*/
+
+*{scrollbar-face-color:  #ffe683;  /*-滚动块颜色-*/
+  scrollbar-highlight-color:   #fff;  /*-高光边线-*/
+  scrollbar-shadow-color:   #ffe683;   /*-滚动块右、下边线-*/
+  scrollbar-3dlight-color:   #fff289;   /*-滚动块上、左边线-*/
+  scrollbar-arrow-color:   #8d5152;    /*-上下三角颜色-*/
+  scrollbar-track-color:   #ffefad;    /*-滚动条背景色-*/
+  scrollbar-darkshadow-color:   #ffdd58 /*-右侧线-*/
+  
+} 
+
+.rightBody{padding:0 5px 0 5px;}	/*--右侧body--*/
+
+
+.bor{border:1px solid #f6b355;}/*--表格边线--*/
+.bor2{ border:1px solid #fce8cc;}/*--表格边线2--*/
+
+
+/*=======当前位置=======*/
+.location{ background:url(../images/skinGolden/locationBg.png) repeat-x 0 bottom; color:#8a5102;}
+.location .icon{ background:url(../images/skinGolden/locationBg.png) no-repeat;}
+/*=======当前位置 end=======*/
+.tableH2{ color:#8a5000; }/*---居中标题--*/
+
+/*=======底部滚动的公告=======*/
+.scrollNotice{border:1px solid #f6b355; background:url(../images/skinGolden/list/titlebg.gif) repeat-x 0 bottom;}
+.scrollNotice .icon{background:url(../images/skinGolden/scrollNotice.png) no-repeat;}
+.scrollNotice a{ color:#333;}
+.scrollNotice .all{color:#854e00;}
+/*=======底部滚动的公告 end=======*/
+
+/*==============列表标题行和查询条标题行样式=============*/
+.title
+{
+	border:1px solid #f6b355;
+}
+.title th{ background:url(../images/skinGolden/list/titlebg.gif) repeat-x  ; border-left:none; border-right:none; border-bottom:1px solid #f6b355;  color:#8a5000; }
+.title td{ background:#fffae3; border-left:none; border-right:none; color:#7e4a00;}
+.titletooffbtn{ background:url(../images/skinGolden/list/titletooffbtn.png) no-repeat;}/*--收起表格--*/
+.titletooffbtn:hover{background-position: -27px 0;}
+
+.trBg1 td{background:#fff;}/*--奇数行背景色--*/
+.trBg2 td{background:#FAFAFA;}/*--偶数行背景色--*/
+.overcolor td{background:#FAFAFA;}/*--鼠标移动时背景色--*/
+/*==============列表标题行和查询条标题行样式 end=============*/
+
+.list table,
+.list table td,
+.list table td th,
+.list2 table,
+.list2 table td{border:none;background:none;}/*--子级表格不继承父级样式 101208修改--*/
+/*============列表========*/
+.list,
+.list td,
+.list th{border:1px solid #f9c866;}
+.list th{
+	 background:url(../images/skinGolden/list/listhead.gif) repeat-x;
+	 color:#8a5000;}
+.list .tdBg,
+.list .tdBg2{background:#fffae3; color:#8a5000;}
+
+table.list2,
+table.list2 td,
+table.list2 th{border:1px solid #fce8cc;}/*--更浅的表格--*/
+.list2 .tdBg,
+.list2 .tdBg2{background:#fffae3; color:#8a5000;}
+.list2 .tdBg2 a{color:#8a5000;}
+
+.borButtom{border-bottom:1px solid #f9c866;}
+.bottomBg2{background:#fffae3; botder-top:1px solid #fad69c;}
+
+/*============列表 end========*/
+ 
+
+
+
+/*==========弹出窗口下的操作区=========*/
+.bottomTable{border-top:1px solid #f6b355; background:#fffae3;}
+/*==========弹出窗口下的操作区 end=========*/
+
+/*==========按钮=========*/
+.btnSo, .btn2, .btn3, .btn4, .btn5, .btn6, .btn7, .btn8, .btnB2, .btnB3, .btnB4, .btnB5{ background:url(../images/skinGolden/button.png) no-repeat; border:none;  color:#a25e00; }
+.btnSo:hover, .btn2:hover, .btn3:hover, .btn4:hover,.btn5:hover, .btn6:hover, .btn7:hover, .btn8:hover, .btnB2:hover, .btnB3:hover, .btnB4:hover, .btnB5:hover{color:#922100;}
+
+/*--带小图标的搜索按钮--*/
+.btnSo:hover{background-position:0 -32px;}
+
+.btn2,btn3{ background-position:-60px 0;}/*--适用于2、3个字--*/
+.btn2:hover, btn3:hover{background-position:-60px -32px;}
+
+.btn4{ background-position:-120px 0;}/*--适用于4个字--*/
+.btn4:hover{background-position:-120px -32px;}
+
+.btn5{ background-position:-190px 0;}/*--适用于5个字--*/
+.btn5:hover{background-position:-190px -32px;}
+
+.btn6{background-position:-272px 0;}/*--适用于6个字--*/
+.btn6:hover{background-position:-272px -32px;}
+
+.btn7{ background-position:-472px 0;}/*--适用于7个字--*/
+.btn7:hover{background-position:-472px -32px;}
+
+.btn8{ background-position:-472px 0;}/*--适用于8字--*/
+.btn8:hover{background-position:-472px -32px;}
+
+.btnB2, .btnB3{ background-position:-590px 0;}/*--大按钮，适用于2、3字--*/
+.btnB2:hover, .btnB3:hover{background-position:-590px -32px;}
+
+.btnB4{background-position:-660px 0; }/*--大按钮，适用于4字--*/
+.btnB4:hover{background-position:-660px -32px;}
+
+.btnB5{ background-position:-740px 0; }/*--大按钮，适用于5字--*/
+.btnB5:hover{background-position:-740px -32px;}
+/*==========按钮 end=========*/
+
+
+/*=========翻页==========*/
+
+.firstPage,
+.prvePage,
+.nextPage,
+.endPage{ background-image:url(../images/skinGolden/list/pagedown.gif); background-repeat:no-repeat;}
+
+.pageNum{border:1px solid #999;}
+/*=========翻页 end==========*/
+
+/*========机构管理页面的树状结构========*/
+.treeBox{ background:#fffcf1; }
+.firstTree a, .secondTree a, .thirdTree a{background:url(../images/skinGolden/treeMeun.png) no-repeat;color:#8a5000;}
+
+.firstTree a{ background-position:0 1px; }
+.firstTree a.on{background-position:0 -26px; }
+
+.secondTree a{ background-position:1px -54px;}
+.secondTree a.menu{background-position:0 2px;}
+.secondTree a.on{background-position:0 -25px; }
+
+.thirdTree a{ background-position:0 -82px;}
+/*========机构管理页面的树状结构========*/
+
+/*==========二级标签=========*/
+.subTab li,
+.subTab li a{background:url(../images/skinGolden/subTab.png) no-repeat;}
+
+.subTab li { background-position:0 2px; }
+.subTab li a {background-position:100% 2px;color:#ca8729;  }
+.subTab li a:hover {background-position: 100% -46px;  color:#924f00;}
+.subTab li.on {background-position:0 -48px; }
+.subTab li.on a,
+.subTab li.on a:hover {background-position:100% -48px;   color:#924f00;  }
+.subTab .othersL{border-bottom:1px solid #f7b355; }
+.subTab .others {border-bottom:1px solid #f7b355; }
+
+.subTab2{}/*--重置.subTab的样式，用于弹出窗口中的标签--*/
+.subTab2 li{border-bottom:1px solid #f7b355;}
+.subTab2 li.on{border-bottom:1px solid #fff;}
+/*==========二级标签 end=========*/
+
+/*==========图标=========*/
+.iconGoText,
+.iconPagePpaste,
+.iconHelp,
+.iconMagnifier,
+.iconPage,
+.iconPageFind{background:url(../images/skinGolden/viewTextIcon.png) no-repeat; }/*-----共用一张背景图----*/
+.iconPagePpaste{background-position:0 -29px;}
+.iconHelp{background-position:0 -133px;}
+.iconMagnifier{background-position:0 -55px;}
+.iconPage{background-position:0 -107px;}
+.iconPageFind{background-position:0 -107px;}
+/*==========图标 end=========*/
+
+/*==========检索=========*/
+	/*------------全文检索------------*/
+.retrieveTitle td,
+.retrieveTitle .icon{background:url(../images/skinGolden/retrieveTitle.png);}
+.retrieveTitle td{background-repeat:repeat-x; background-position:0 bottom;  color:#8a5000;}
+
+	/*------------全文检索 end------------*/
+
+	/*------------全文检索-帮助------------*/
+.retrieveHelp h1{ background:url(../images/skinGolden/retrieveH1.png) repeat-x 0 bottom; color:#8a5000; }
+.retrieveHelp h2{color:#8a5000; }
+.retrieveHelp em{color:#00f;}
+	/*------------全文检索-帮助 end------------*/
+.closeWin{background:url(../images/skinGolden/close.png) no-repeat 0 2px; color:#8a5000; }	
+.closeWin:hover{background-position:0 -17px;}
+/*==========检索=========*/
+
+/*=======正文、查看发文、通知公告等页面样式======*/
+
+.viewText h2{color:#8a5000;}
+
+.viewText .state{ color:#a17333;}
+
+.viewText p a {color:#8a5000;}
+/*=======正文、查看发文、通知公告等页面样式 end======*/
+
+
+
+/*-------------------------------left_menu.css----------------------------------*/
+/*==========左侧=========*/
+.leftBody{background:url(../images/skinGolden/leftBg.gif) repeat-y; }
+/*==========左侧=========*/
+
+.firstMenu,
+.firstMenu a,
+.firstMenu .wArrow,
+.secondMenu a,
+.thirdMenu a{background:url(../images/skinGolden/left_menu.png) no-repeat;}/*----共用一张背景图-----*/
+
+/*====左导航一级菜单=============*/
+.firstMenu{ background-repeat:repeat-x;}
+.firstMenu a{color:#fff; background-position:0 -56px;}
+.firstMenu a.on{background-position:0 -78px;}
+.firstMenu .wArrow{background-position:0 -45px;}
+/*====左导航一级菜单 end=============*/
+
+
+/*====左导航2级菜单=============*/
+.secondMenu a{background-position:3px -110px; color:#922100;}
+.secondMenu a.on{ background-position:0 -86px; }
+.secondMenu a.menu{ background-position:0 -64px; }
+/*====左导航2级菜单 end=============*/
+
+
+/*====左导航3级菜单=============*/
+.thirdMenu a{background-position:5px -135px; color:#922100; }
+
+/*====左导航3级菜单 end=============*/
+/*-------------------------------left_menu.css end----------------------------------*/
+
+
+/*-------------------------------logo.css----------------------------------*/
+/*==========头部=========*/
+.head{ background:url(../images/skinGolden/logo/Headbg.gif) repeat-x; }
+.head_r{background:url(../images/skinGolden/logo/head_r.gif) no-repeat right 0;}
+
+.logo{background:url(../images/skinGolden/logo/logo.jpg) no-repeat;}
+.logoName{ background:url(../images/skinGolden/logo/logo_m.png) no-repeat;}
+.loreName{background:url(../images/skinGolden/logo/loreName.gif) no-repeat;}/*--知识管理平台名称--*/
+.gwjhName{background:url(../images/skinGolden/logo/gwjhName.gif) no-repeat;}/*--公文交换平台名称--*/
+/*==========头部 end=========*/
+
+.userinfo,
+.navigation li .aNormal,
+.navigation li .aNormal span,
+.navigation li .aNormal div,
+.navigation li .aActive,
+.navigation li .aActive span,
+.navigation li .aActive div{background:url(../images/skinGolden/logo/logoImg.gif);}
+/*-----共用一张背景图-----*/
+
+/*==========导航=========*/
+.logintit{ background:url(../images/skinGolden/logo/logintit_m.gif) repeat-x;}
+.logintit_r{background:url(../images/skinGolden/logo/logintit_r.gif) no-repeat right 0;}
+
+.userinfo{ background-repeat:no-repeat; background-position:-15px -464px; }
+.userinfo .name{color:#ff3300;}
+/*==========导航 end=========*/
+
+/*==========标签=========*/
+.tabsTool{ background:url(../images/skinGolden/logo/logintit_r.gif) no-repeat right 0}
+
+.tabs li { background:url(../images/skinGolden/logo/logoImg.gif) no-repeat -17px -699px;}
+.tabs li a { color:#b1721a;background:url(../images/skinGolden/logo/logoImg.gif) no-repeat 100% -699px; }
+.tabs li a:hover { background:transparent url(../images/skinGolden/logo/logoImg.gif) no-repeat 100% -817px; color:#922100;}
+.tabs li.on { background-position:-17px -581px;}
+.tabs li.on a,
+.tabs li.on a:hover { background-position:100% -581px;  color:#fff;}
+
+/*-----右侧修改密码及退出---*/
+.rightTool{float:right; }
+.rightTool li{background:url(../images/skinBlue/logo/iconSty.gif) no-repeat; }
+.rightTool li a{color:#fff;}
+.rightTool li.ex{background-position:0 -24px;}
+.rightTool li.pw{background-position:0 0;}
+.rightTool li.styHelp{background-position:0 -72px;}
+.rightTool li.service{background-position:0 -93px;}
+
+
+.rightTool span{cursor:hand;color:#fff;background:url(../images/skinGolden/logo/logoBtn.gif) no-repeat; width:31px;height:31px; margin-right:10px;}
+.rightTool span.mail{background-position:0 0;}
+.rightTool span.itc{background-position:0 -31px;}
+.rightTool span.pw{background-position:0 -92px;}
+.rightTool span.ex{background-position:0 -61px;}
+.rightTool span.styHelp{background-position:0 -154px;}
+/*==========标签 end=========*/
+
+a.linkoutlogin:link,a.linkoutlogin:visited,a.linkoutlogin:active{color:#CC3300;}
+
+.navigation li .aNormal {background-repeat:no-repeat;  background-position: -16px -521px;color:#b1721a; }
+.navigation li .aNormal span { background-position: -22px -581px;}
+.navigation li .aNormal div {background-repeat: no-repeat;background-position: -308px -581px;}
+
+.navigation li a:hover {background-position: -16px -757px;}
+.navigation li a:hover span {background-position: -22px -817px; color:#922100;}
+.navigation li a:hover div {background-position: -308px -817px;}
+
+.navigation li .aActive {background-repeat: no-repeat; background-position: -16px -757px;color:#fff;}
+.navigation li .aActive span {display:block;background-position: -22px -817px; color:#fff; }
+.navigation li .aActive div {background-repeat: no-repeat; background-position: -308px -817px;}
+
+a.linklogo{color:#1D568B;}
+
+/*-------------------------------logo.css- end---------------------------------*/
+
+
+/*-------------------------------commandbar ---------------------------------*/
+/*--操作条背景--*/
+.commandBar{background-image:url(../images/skinGolden/toolBar.png); background-position:0px -29px;background-repeat:repeat-x}
+
+/*--按钮背景--*/
+.commandBar a:hover,.commandBar a:hover span{background-image:url(../images/skinGolden/toolBar.png);background-repeat:no-repeat;}
+/*-------------------------------toolbar end---------------------------------*/
+
+/*-------------------------------lore.css ---------------------------------*/
+.loreFirstMenu a,
+.loreSecondMenu ul li a,
+.loreThirdMenu ul li a{background:url(../images/skinGolden/loreMenu.png) no-repeat; color:#8a5000;}/*-共用一张背景图--*/
+.loreFirstMenu .loreIconDraft{background-position:0 -26px;}
+.loreFirstMenu .loreIconShared{background-position:0 -52px;}
+.loreFirstMenu .loreIconRetrieve{background-position:0 -81px;}
+.loreFirstMenu a{color:#8a5000;}
+.loreSecondMenu ul li a{background-position:2px -160px;}
+.loreSecondMenu ul li a.menu{background-position:0 -110px;}
+.loreSecondMenu ul li a.on{background-position:0 -137px;}
+.loreThirdMenu ul li a{background-position:0 -182px;}
+
+/*==========查看知识管理文章详情=======*/
+
+.loreView{width:850px; margin:10px auto; border:1px solid #dc2f0d;}
+.loreView .viewHead{width:100%; height:71px; overflow:hidden; background:url(../images/skinGolden/logo/loreViewHead.png) repeat-x; position:relative;}/*--头部--*/
+.loreView .loreViewLogo{width:425px; height:70px; margin-left:10px; overflow:hidden;position:absolute; z-index:20; background:url(../images/skinGolden/logo/loreViewlogo.png) no-repeat;  text-indent:-9999em;}/*--logo和名称--*/
+.loreView .viewHeadR{width:380px; height:70px; position:absolute; z-index:10; right:0; background:url(../images/skinGolden/logo/loreViewHeadR.png) no-repeat right 0; }/*--头部右侧花纹--*/
+
+.loreView h2{ color:#a55c00;}
+.loreView .info{ border-bottom:1px solid #fbe4b2; color:#666;}
+.loreView h3{ background-position: 52px -97px; border-top:1px solid #fbe4b2; color:#a35e00;  }
+.loreView h3.annex{background-position:52px -175px; border-top:none;}
+.loreView h3,
+.loreView ul li{background-image:url(../images/skinGolden/viewTextIcon.png); background-repeat: no-repeat; }/*--共用一张背景图--*/
+.loreView ul li{ background-position:0 -162px;}
+.loreView ul li a{color:#333;}
+
+.loreView .viewFoot{background:url(../images/skinGolden/logo/loreViewFoot.png) repeat-x; color:#666;}
+/*==========查看知识管理文章详情 end=======*/
+
+/*-------------------------------lore.css end---------------------------------*/
+
+
+
+/*--------------------------------会议管理-----------------------*/
+.hyTb1{background-color:#fcedb2}
+.hyTb2{background-color:#f9db7e}
+.hyTb3{background-color:#fbe29a}
+.hyTd1{background-color:#fff7d5}
+.hyTd2{background-color:#ff9f22}
+
+/*-----------------------------------提交处理--------------------*/
+.submitTb{width:100%;height:100%;background-color:#F0C4B3}
+.submitTh{height:26px;background-image:url(../images/skinGolden/submit/thBg.jpg);font-size:12px;color:#a17333;}
+.submitTd{background-color:#FFF7D5;}
+.submitTnTd{height:28px;background-color:#FFEFAD}
+.submitToolbar{height:50px; background:#FFE7A2; clear:both; border-top:1px solid #F0C4B3}
+
+.submitBtn a{background:url(../images/skinGolden/submit/submitBtn.gif) no-repeat scroll;background-position:0px -23px; width:49px;height:23px;right:10px;position:absolute;}
+.submitBtn a:hover{background-position:0px 0px;}
+
+/*--------------------------------知识管理---------------------------*/
+.loreSubMenu{margin:2px 0 0 40px;}
+.loreSubMenu a {color:#8a5000}
+
+
+
+/*============灰色表格========*/
+.divBor{margin:1px; overflow:hidden; border-left:1px solid #d4d2c8;border-top:1px solid #d4d2c8;border-right:1px solid #a1a1a1;border-bottom:1px solid #a1a1a1;}
+table table.tableGray{border:2px solid #fff; border-collapse:collapse; }
+table .tableGray td{border:1px solid #a1a1a1; border-collapse:collapse;}
+table .tableGray th{border:1px solid #a1a1a1;}
+table td.tdGray{background:#f1f1f1;}
+
+/*============灰色表格========*/

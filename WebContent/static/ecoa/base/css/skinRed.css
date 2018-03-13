@@ -1,0 +1,261 @@
+﻿/*
+------------------------------- 
+Site:        易臣oa 红色皮肤
+Author:      qushujun
+Updated:    
+Updated by:
+-------------------------------
+*/
+
+*{scrollbar-face-color:  #F0F0F0;  /*-滚动块颜色-*/
+  scrollbar-highlight-color:   #fff;  /*-高光边线-*/
+  scrollbar-shadow-color:   #EEEEEE;   /*-滚动块右、下边线-*/
+  scrollbar-3dlight-color:  #EEEEEE;   /*-滚动块上、左边线-*/
+  scrollbar-arrow-color:   #333333;    /*-上下三角颜色-*/
+  scrollbar-track-color:   #fff;    /*-滚动条背景色-*/
+  scrollbar-darkshadow-color:   #F8F8F8 /*-右侧线-*/
+}
+
+.siteNav, .h_oper a, .menu ul .b,.theUser, .menu li s, .menu li.curr, .menu li.curr a, .classify li b, .taskTop li span, .taskTop li.cur, .taskTop li b, .taskTop .r, .tab li.cur, .tab li.cur s{ background:url(../images/skinRed/homeBg.png) no-repeat;}
+.itemTop li b, .itemDate, .v_service dl dt, .aOper li, .aOper li a, .fTop li, .fTop li b, .applyButton input, .keepDiary, .diarySearch input, .dTop h2 b, .r_logo input.button{ background:url(../images/skinRed/znxzBg.png) no-repeat;}
+
+/*-头部start-*/
+.applyButton input.btn-bc{ background-position:-1px -187px;}
+.applyButton input.btn-qx{ background-position:-108px -187px;}
+
+.siteNav{background-position:0px 0px; background-repeat:repeat-x;}
+.Area .fBlue, .h_oper a{color:#c71525;}
+
+.theUser{ background-position: -205px 6px;}
+.menu{ background-color:#E4393C;}
+.menu ul .b{background-position: 0px -181px;}
+.menu li a{color:#ddf1ff;}
+.menu li.curr,.menu li.curr:hover{ background-position: 0px -42px;}
+.menu li.curr a,.menu li.curr a:hover{background-position: right -42px; color:#E4393C;}
+.menu li a:hover{ color:#fff;}
+/*-头部end-*/
+
+/*-左边菜单start-*/
+.leftBody{ border-right:1px solid #ffb0b0; height:100%; background-color:#fff6f6;}
+.firstMenu{ height:42px; border-top:1px solid #ffb0b0; background-color:#ffdfdf;}
+.firstMenu.on{ background-color:#fff6f6 !important;border-bottom:1px solid #ffb0b0; }
+.firstMenu a{color:#4f0000;}
+.firstMenu a b,.firstMenu a span{ background:url(../images/skinRed/znxzBg.png) no-repeat;}
+.firstMenu a b.i_grswzx{ background-position: 0px 0px;}/**个人事务中心-图标**/
+.firstMenu a b.i_qcwj{ background-position: 0px -15px;}/**起草文件-图标**/
+.firstMenu a b.i_grsz{ background-position: 0px -31px;}/**个人设置-图标**/
+
+.firstMenu a span{ background-position: -26px -21px;} /**下拉图标-正常状态**/
+.firstMenu.on a span{ background-position: -26px 0px !important;}/**下拉图标-展开状态**/
+
+.secondMenu{border-left:1px solid #ffb0b0;  }
+.secondMenu s{ background-color:#fff6f6;}
+.secondMenu a{background:url(../images/skinRed/znxzBg.png) -35px -90px no-repeat;}
+.secondMenu a.sel{ background-position: -34px -44px; color:red; font-weight:bold;}
+.secondMenu a b{background:url(../images/skinRed/znxzBg.png) no-repeat;}
+.secondMenu a b.digit_1{ background-position: -50px 0px; width:22px;}/**数字提示-1位数**/
+.secondMenu a b.digit_2{ background-position: -76px 0px; width:28px;}/**数字提示-2位数**/
+.secondMenu a b.digit_3{ background-position: -107px 0px; width:32px;}/**数字提示-3位数**/
+
+.leftCont{border-bottom:1px solid #ffb0b0;}
+/*-左边菜单end-*/
+
+.classify li a:hover{ color:red;background:url(../images/skinRed/homeBg.png) 0px -545px no-repeat;}
+.classify .c-more:hover{ background-color:#ea310b;color:#fff;}
+.classify .columns{ border:1px solid #ea310b; }
+.classify{background:url(../images/skinRed/usBg.png) no-repeat;}
+.c_name a{color:#66050e;}
+.c_op a{ color:yellow; margin:0px 4px; cursor:default}
+.depart .mCon a input{ background:url(../images/skinRed/znxzBg.png) no-repeat;}
+.depart .mCon a input.m_mail{ background-position:-64px -142px; right:30px;}
+.depart .mCon a input.m_info{ background-position:-34px -142px; right:5px;}
+
+/*.v_service li:hover, .q_service li:hover, .q_service li:hover p{ background-color:#ff776e; border-color:#ff776e; color:#fff;}
+.v_service li.curr, .q_service li.curr{ background-color:#ff776e; border-color:#ff776e;}
+.v_service li.curr p, .q_service li.curr p{ color:#fff;}
+.v_service li a p, .q_service li a p{ margin-top:4px;}
+.v_service dl dt{background-position: -55px -36px;}
+.v_service dl dd a.curr{color:red; font-weight:700;}*/
+
+/*home css*/
+.item{border:1px solid #ffb0b0; }
+.item .itemTop{ background-color:#fff6f6;border-bottom:1px solid #ffb0b0;}
+.item .l{  background-position: 0px -30px;}
+.itemTop li.cur{ background-position: -17px -181px; font-weight:700;height:30px; line-height:29px;color:#730909}
+.itemTop li.cur s{ background-position: -222px -181px;}
+.itemTop li.c_tit,.itemTop li.c_tit a{color:#730909; font-weight:700;}
+.itemDate{background-position:0px -85px;}
+.item .dateList li a.curr{ background-color:red;}
+.itemTop li b.i_db{background-position:-205px -138px;}
+.itemTop li b.i_dy{background-position:-205px -161px;}
+.itemTop li b.i_gg{background-position:-205px -184px;}
+.itemTop li b.i_txl{background-position:-205px -203px;}
+.itemTop li b.i_wdrc{background-position:-206px -223px;}
+
+.item .taskTop{background-position: 0px -363px; background-repeat:repeat-x;}
+.taskTop li span{background-position: -229px -452px;}
+.taskTop li.cur{ background-position: -8px -407px;}
+.taskTop li.cur span{background-position:0px -406px;}
+.taskTop li b{ background-position:-177px -407px;}
+.taskTop .r{ background-position: -231px -407px;}
+.taskContent table .t_tit span{border-bottom:2px solid #0caee1;}
+
+.applyTop{ height:60px; background:url(../images/skinRed/sqT.jpg) -1px 0px no-repeat; }
+
+.s_date i.s_prev{ border-color: #fff6f6 #6b6b6b #fff6f6 #fff6f6; }
+.s_date i.s_next{ border-color:#fff6f6 #fff6f6 #fff6f6 #6b6b6b; }
+/*==============列表标题行和查询条标题行样式=============*/
+
+.title td{color:#333333;}
+.title th{background-color:#f8e7e7; color:#730909;}
+.titletooffbtn{ background:url(../images/skinRed/znxzBg.png) -20px 4px no-repeat;}/*--收起表格--*/
+
+.trBg1 td{background:#fff;}/*--奇数行背景色--*/
+.trBg2 td{background:#FAFAFA;}/*--偶数行背景色--*/
+.overcolor td{background:#fff6f6;}/*--鼠标移动时背景色--*/
+/*==============列表标题行和查询条标题行样式 end=============*/
+
+.location{background-color:#f8e7e7; color:#730909;}
+.bor{border:1px solid #f0d7d7;}/*--表格边线--*/
+
+.list table,
+.list table td,
+.list table th,
+.list2 table,
+.list2 table td{border:none;background:none;}/*--子级表格不继承父级样式 101208修改--*/
+/*============列表========*/
+.list td,.list th{border:1px solid #f0d7d7;}
+.list th{height:40px; background-color:#f8e7e7; color:#730909;}
+.list td{ height:26px;}
+.list .tdBg1{background:#fff;}
+.list .tdBg2{background:#fdf8f8;}
+.list .tdBg{background:#fdf8f8;}
+
+table.list2,
+table.list2 td,
+table.list2 th{border:1px solid #daf3ff;}/*--更浅的表格--*/
+
+.list2 .tdBg,
+.list2 .tdBg2{background:#f7fbfe; color:#333333;}
+.list2 .tdBg2 a{color:#069;}
+
+.borButtom{border-bottom:1px solid #8fd2f5;}
+.bottomBg2{background:#fffae3; botder-top:1px solid #fad69c;}
+
+/*============列表 end========*/
+ 
+
+
+
+/*==========弹出窗口下的操作区=========*/
+.bottomTable{border-top:1px solid #8fd2f5; background:#eaf7ff;}
+/*==========弹出窗口下的操作区 end=========*/
+
+/*==========按钮=========*/
+.btnSo, .btn2, .btn3, .btn4, .btn5, .btn6, .btn7, .btn8,.btnB2,.btnB3,.btnB4,.btnB5,.btnB6,.btnB7{ background:url(../images/skinRed/button.png) no-repeat; border:none;  color:#fff; }
+.btnB_2, .btnB_3, .btnB_4, .btnB_5, .btnB_6, .btnB_7{ background:url(../images/skinRed/button.png) no-repeat; border:none;  color:#185783; }
+.btn_2{background:url(../images/skinRed/button.png) no-repeat; border:none; color:#e43b0c;}
+/*--带小图标的搜索按钮--*/
+
+.btnSo,.btn2,.btn3{ background-position:-60px 0;}/*--适用于2、3个字--*/
+.btn_2{background-position:0px -34px;}
+
+.btn4{ background-position:-120px 0;}/*--适用于4个字--*/
+
+.btn5{ background-position:-190px 0;}/*--适用于5个字--*/
+
+.btn6{background-position:-272px 0;}/*--适用于6个字--*/
+
+.btn7{ background-position:-472px 0}/*--适用于7个字--*/
+
+.btn8{ background-position:-472px 0;}/*--适用于8字--*/
+
+.btnB2, .btnB3, .btnB4{ background-position:-590px 0;}/*--大按钮，适用于2、3、4字--*/
+.btnB_2, .btnB_3, .btnB_4{ background-position:-590px -34px;}
+
+.btnB5,.btnB6,.btnB7{ background-position:-681px 0;}/*--大按钮，适用于5、6、7字--*/
+.btnB_5, .btnB_6, .btnB_7{ background-position:-681px -34px;}/*--大按钮，适用于5、6、7字--*/
+/*==========按钮 end=========*/
+
+.diaryList .dTop{ border-bottom:1px solid #d5d5d5; }
+.diaryList .dTop h2{ border-bottom:1px solid #fe4e2b;}
+.searMonth .M_top{ border-bottom:1px solid #fe4e2b;}
+.keepDiary{ background-position: -1px -225px;}
+.aOper li{ background-position: -1px -126px;}
+.aOper li a{ background-position: right -126px;}
+
+.d_page input.button{ border:0px none; border-radius:5px; background-color:#d43d0c; padding:2px 8px; color:#fff; cursor:pointer;
+   background-image: -moz-linear-gradient(top, #ea3808, #d43d0c); /* Firefox */
+   background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #ea3808), color-stop(1, #d43d0c)); /* Saf4+, Chrome */
+   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ea3808', endColorstr='#d43d0c', GradientType='0'); /* IE*/}
+   
+.r_logo input.button{  background-position:-182px -278px;}
+
+.ToBox{ position:fixed; right:7%; margin-right:-45px; bottom:100px; width:45px; background-color:#f0f0f0;}
+.ToBox a{ display:block; width:35px; height:35px; margin:10px auto; background:url(../images/skinRed/znxzBg.png) no-repeat;}
+.ToBox a.to_top{ background-position:right -320px;} 
+.ToBox a.to_code{ background-position:right -362px;} 
+.ToBox a.to_feedback{ background-position:right -416px;} 
+
+/*列表*/
+.tableList table .t_sear td{ background-color:#f8f8f8;color:#a7545b;}
+.itemTop .Batch{ background:url(../images/skinRed/znxzBg.png) -100px -316px no-repeat; }
+
+/*快捷导航*/
+.qTit input{background:url(../images/skinRed/znxzBg.png) -160px 0px no-repeat;}
+.quickM{ border-top:1px solid #dae6f6;}
+.quickM li{ border-bottom:1px solid #dae6f6;}
+.quickM li a{background:url(../images/skinRed/znxzBg.png) 186px -206px no-repeat;}
+.quickM li a b{background:url(../images/skinRed/znxzBg.png) no-repeat;}
+.quickM li a b.i_qjsq{ background-position: -232px 0px;} /*请假申请-图标*/
+.quickM li a b.i_fybxsq{ background-position: -232px -22px;} /*费用报销申请-图标*/
+.quickM li a b.i_mgzzsq{ background-position: -232px -44px;} /*美工制作申请-图标*/
+.quickM li a b.i_xtcssq{ background-position: -232px -62px;} /*系统测试申请-图标*/
+.quickM li a b.i_cpyhxq{ background-position: -232px -83px;} /*产品优化需求-图标*/
+.quickM li a b.i_sbsysq{ background-position: -232px -102px;} /*设备使用申请-图标*/
+.quickM li a b.i_wlzysq{ background-position: -232px -122px;} /*网络资源申请-图标*/
+.quickM li a b.i_grgzzb{ background-position: -232px -142px;} /*个人工作周报-图标*/
+
+
+/*-------------------------------commandbar ---------------------------------*/
+/*--操作条背景--*/
+.commandBar {background-image:url(../images/skinRed/toolBar.png); background-position:0px -29px;background-repeat:repeat-x}
+
+/*--按钮背景--*/
+.commandBar a:hover,.commandBar a:hover span{background-image:url(../images/skinRed/toolBar.png);background-repeat:no-repeat;}
+
+/*==========二级标签=========*/
+.subTab li a { background-color:#ffd4c2; color:#333; border:1px solid #e0bcb1;  }
+.subTab li.on {background:url(../images/skinRed/subTab.png) #fff 50% 28px no-repeat !important; border:0px none;}
+.subTab li.on a{ background-color:#e43b0c; border:1px solid #e43b0c; color:#fff; font-weight:bold;}
+
+/*==========二级标签 end=========*/
+
+/*=======正文、查看发文、通知公告等页面样式======*/
+
+.viewText .list,
+.viewText .list td{border:1px solid #fbcfb9;}
+.viewText .list .tdBg{background:#fff6f6; color:#333;}
+.viewText h2{font-size:22px;}
+.viewText .state{ color:#e43b0c; font-size:12px; font-weight:bold; margin-bottom:10px;}
+
+.viewText p a {color:#069;}
+/*=======正文、查看发文、通知公告等页面样式 end======*
+
+/*-----------------------------------提交处理--------------------*/
+.submitTb{width:100%;height:100%;background-color:#76bfff}
+.submitTh{height:26px; background-color:#b7e1f7;font-size:12px;color:#0284d0;}
+.submitTh2{color:#0284d0;}
+.submitTd{background-color:#f1faff;}
+.submitTnTd{height:28px;background-color:#deeff9}
+.submitDiv{height:100%;};
+.submitToolbar{height:50px; background:#b6e0f7; clear:both; border-top:1px solid #76bfff}
+
+.submitBtn a{background:url(../images/skinRed/submit/submitBtn.gif) no-repeat scroll;background-position:0px -23px; width:49px;height:23px; right:10px;position:absolute;}
+.submitBtn a:hover{background-position:0px 0px;}
+
+
+/*=========翻页==========*/
+.pageDown a:hover{border-color:#e43b0c;color:#e43b0c;}
+.pageDown a.curr{background-color:red;border-color:red;color:#fff;}
+/*=========翻页 end==========*/

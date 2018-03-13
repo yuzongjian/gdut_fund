@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="model.item_track_add.mapper">
+<update id="Update"  parameterType="model.Item_track_add">  
+        <!--  item指明当前遍历的对象，collection指明传入的集合类型，
+        open指明迭代以什么符号开始，separator指明迭代间用什么符号分割，close指明迭代用什么符号结束，还有index可以指明迭代的索引。 -->
+          <foreach collection="list" item="item" index="index" open="" close="" separator=";"> 
+                update yd_item_track_add   
+                <set>  
+                  old_title=#{item.old_title},  
+         
+                  old_evaluate=#{item.old_evaluate}, 
+             
+                  time=#{item.time},
+               
+                  content=#{item.content},
+               
+                  sign=#{item.sign} 
+                </set> 
+                where id = #{item.id}  
+        </foreach>
+            
+    </update> 
+    
+ <insert id="Insert" parameterType="model.Item_track_add">
+ 	insert into yd_item_track_add values(null,#{old_title},#{old_evaluate},#{time},#{content},#{sign},#{track_id})
+ </insert>   
+ <select id="SelectCount" parameterType="string" resultType="int">
+ select count(*) from  yd_item_track_add where track_id=#{track_id}
+ </select>
+ 
+ <delete id="Delete" parameterType="int">
+ delete from yd_item_track_add where id=#{id}
+ </delete>
+</mapper>

@@ -1,0 +1,43 @@
+/*
+-------------------------------
+Site:        易臣OA系统 操作条及按钮
+Author:      
+Updated:     2010-11-25
+Updated by:
+-------------------------------
+*/
+.commandBar {height:35px;line-height:28px;padding:3px 0 3px 8px;color:#137700;background-position:0px -29px;background-repeat:repeat-x;z-index:2;position:relative;font-size:12px;}
+
+.commandBar a{height:29px;padding:0px 12px 0 28px;line-height:29px;position:relative;color:#fff;text-decoration:none;font-style:normal;font-weight:normal;font-size:12px;font-family:Verdana, Arial, Helvetica, sans-serif, 宋体;}
+
+.commandBar a span{width:9px;height:29px;padding:0 4px 0 0; position:absolute;right:0px;top:0px;color:#8a5000;}
+.commandBar a:hover{background-position:0px 0px; text-decoration:none; color:#713300;}
+.commandBar a:hover span{background-position:right 0px; background-repeat:none;}
+
+
+/*--按钮图标--*/
+.流程跟踪,.删除,.另存为,.归档,.记录,.填写,.注销文件,.转发,.主控,.退回,.已阅,.保存退出,.编辑正文,.查看正文,.提交,.办理信息,.保存,.发送邮件,.关闭,.发送跟踪,.打印,.发送,.盖章
+{width:14px;height:14px;position:absolute;left:8px;top:6px;background-image:url(../images/public/btnIcon.gif);background-repeat:no-repeat;}
+.流程跟踪{background-position:0px 0px;height:14px;padding-left:16px;}
+.删除{background-position:0px -14px;height:14px;padding-left:16px;}
+.另存为{background-position:0px -28px;height:14px;padding-left:16px;}
+.归档{background-position:0px -42px;height:14px;padding-left:16px;}
+.记录{background-position:0px -56px;height:14px;padding-left:16px;}
+.填写{background-position:0px -70px;height:14px;padding-left:16px;}
+.注销文件{background-position:0px -84px;height:14px;padding-left:16px;}
+.转发{background-position:0px -98px;height:14px;padding-left:16px;}
+.主控{background-position:0px -112px;height:14px;padding-left:16px;}
+.退回{background-position:0px -126px;height:14px;padding-left:16px;}
+.已阅{background-position:0px -140px;height:14px;padding-left:16px;}
+.保存退出{background-position:0px -126px;height:14px;padding-left:16px;}
+.编辑正文{background-position:0px -168px;height:14px;padding-left:16px;}
+.查看正文{background-position:0px -182px;height:14px;padding-left:16px;}
+.提交{background-position:0px -196px;height:14px;padding-left:16px;}
+.办理信息{background-position:0px -210px;height:14px;padding-left:16px;}
+.保存{background-position:0px -142px;height:14px;padding-left:16px;}
+.发送邮件{background-position:0px -238px;height:14px;padding-left:16px;}
+.关闭{background-position:0px -252px;height:14px;padding-left:16px;}
+.发送跟踪{background-position:0px -266px;height:14px;padding-left:16px;}
+.打印{background-position:0px -280px;height:14px;padding-left:16px;}
+.发送{background-position:0px -294px;height:14px;padding-left:16px;}
+.盖章{background-position:0px -308px;height:14px;padding-left:16px;}

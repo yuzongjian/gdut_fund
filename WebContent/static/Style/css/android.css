@@ -1,0 +1,82 @@
+@charset "utf-8";
+
+* { margin:0;padding:0;}
+BODY { width:100%;background:#fff;}
+IMG { border:0;border-width: 0;border-style:none; }
+A, .btn, .layout, .cbx, .rdo { text-decoration:none;outline:none;blr:expression(this.onFocus=this.blur()); }
+a:focus{ -moz-outline-style: none; /* FF */ } 
+A:hover { text-decoration:none; }
+UL,LI{ list-style:none !important;vertical-align:top;}
+DIV,UL,LI { height:auto;padding:0;margin:0; } 
+A, .btn, .cbx, .rdo { cursor:pointer;}
+.pointer { cursor:pointer;}
+
+.clear { clear:both; }
+.fl { float:left;}
+.fr { float:right;}
+
+
+
+.download { width:100%;height:auto;overflow:hidden;margin:0 auto;}
+
+.download .top { width:100%;height:auto;overflow:hidden;margin:0 auto;}
+.download .bottom { width:100%;height:auto;overflow:hidden;margin:0 auto;}
+
+
+
+/*
+.download .left { width:115px;height:580px;overflow:hidden;float:left;background:url(../images/and-download-bg-left.jpg) top center no-repeat;}
+.download .right { width:115px;height:580px;overflow:hidden;float:right;background:url(../images/and-download-bg-right.jpg) top center no-repeat;}
+
+.download .center { height:580px;overflow:hidden;float:left;}
+
+.download .center A { display:block;width:385px;height:362px;border:none;background:url(../images/and-download-intro.jpg) top center no-repeat;margin:210px auto 0;text-indent:-999px;overflow:hidden;text-align:center;}
+
+
+.download .version { width:100%;height:autp;overflow:hidden;margin:32px auto 0;text-align:center;font:normal 30px/45px 微软雅黑;color:#b5b5b5;}
+.download .button { width:100%;height:auto;overflow:hidden;margin:54px auto 0;}
+.download .button A  { display:block;width:341px;height:79px;margin:0 auto;background:url(../images/and-download-button.jpg) top center no-repeat;text-indent:-999px;}
+*/
+
+
+@media screen and (max-width: 375px) {
+.wap-body-detail .wi-head { text-indent:0% !important;text-align: center !important }
+}  /* 览器宽度不大于380px时，统一350尺寸元素 */
+@media screen and (max-width: 320px) {
+.wap-body-detail .wi-head { text-indent:0% !important;text-align: center !important }
+}  /* 览器宽度不大于380px时，统一320尺寸元素 */
+
+@media screen and (min-width: 376px) {
+.wap-body-detail .wi-head { text-indent:0% !important;text-align: center !important }
+}  /* 览器宽度不小于380px时，统一450尺寸元素 */
+
+
+.download .left, .download .right { width:20%;height:auto;overflow:hidden;float:left;}
+.download .left IMG, .download .right IMG { width:100%;}
+.download .right { float:right;}
+
+.download .center { width:60%;height:auto;overflow:hidden;float:left;text-align:center;}
+.download .center IMG { width:100%;margin-top:25%;}
+
+.download .version { width:100%;height:auto;overflow:hidden;margin:10% auto 0;text-align:center;font-size:130%;line-height:140%;color:#b5b5b5;}
+.download .button { width:100%;height:auto;overflow:hidden;margin:10% auto 0;text-align:center;}
+.download .button IMG { width:55%;}
+
+/* delete A outline */
+ 
+a { blr:expression(this.onFocus=this.blur()); /* IE Opera */ outline: none; /* FF Opera */ }
+
+area { blr:expression_r(this.onFocus=this.blur()); }
+a:active { star:expression(this.onFocus=this.blur()); }
+a:active, a:focus { -moz-outline-style: none;-moz-outline: none; outline: none; ie-dummy:expression(this.hideFocus=true); }
+
+area { blr:expression(this.onFocus=this.blur()); /* IE Opera */ outline: none; /* FF Opera */ }
+
+area:active { star:expression(this.onFocus=this.blur()); }
+area:active, area:focus { -moz-outline-style: none; -moz-outline: none; outline: none; ie-dummy:expression(this.hideFocus=true); }
+
+* {  -webkit-tap-highlight-color:rgba(0,0,0,0);}
+A,AREA {  -webkit-tap-highlight-color:rgba(0,0,0,0); }
+
+
+

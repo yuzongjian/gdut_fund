@@ -1,0 +1,262 @@
+﻿/*
+------------------------------- 
+Site:        智能行政平台 公用样式
+Author:      qushujun
+Updated:     2014-02-12
+Updated by:
+-------------------------------
+*/
+@import url(base.css);
+
+.rightBody{padding:0px 5px;}
+
+.containers {width: 100%; margin-left:auto;margin-right:auto;clear: both;overflow:hidden;}
+/*========页面头部start========*/
+.siteNav{ height:28px; color:#666666;}
+.header{ height:60px;}
+.h_logo{ margin: 7px 0px 0px 2px;}
+.h_logo_name h2, .h_logo_name h3{ font-size:24px; font-family:"微软雅黑"; font-weight:normal; margin-top:10px; color:#333;}
+
+/*头部操作图标*/
+.h_oper a{ display:block; float:left; width:32px; background-repeat:no-repeat; height:32px;text-align:center; margin:0px 5px; line-height:32px;}
+.h_oper a.setUp{ background-position: 0px 0px} /*换肤*/
+.h_oper a.help{ background-position: -70px 0px} /*帮助*/
+.h_oper a.signOut{ background-position: -142px 0px} /*安全退出*/
+.h_oper a.password{ background-position: -106px 0px} /*修改密码*/
+.h_oper a.client{ background-position: -35px 0px} /*客户端下载*/
+
+.menu{ height:34px;padding-top:2px; line-height:32px;}
+.nenu ul{position:relative; z-index:1000;overflow:hidden; float:left;}
+.menu .theUser{width:210px; color:#fff; font-size:14px;float:left; line-height:30px; text-align:left;} 
+.menu li{ display:block;float:left; position:relative; height:34px; line-height:32px;padding-left:2px;}
+.menu li a{ display:block;float:left;position:relative; padding:0px 17px 0px 15px;height:34px; font-weight:bold; font-size:14px; }
+.menu li a i{ position:absolute;width:20px;height:20px; top:12px; left:13px; }
+
+
+.menu .liMore{ background-image:none; float:right;}
+.menu .liMore a, .menu .liMore a:hover{ background:url(../images/lr.png) no-repeat; cursor:pointer; width:25px; height:25px; margin:8px 3px; padding:0px;}
+.menu .liMore a.l{ background-position:left top;}
+.menu .liMore a.r{ background-position:right top;}
+
+.Popup{ position:absolute; z-index:1000; top:40px; left:-20px; width:143px;}
+.Popup .pT{ height:15px; line-height:normal; background:url(../images/dian.png) left -3px no-repeat;}
+.Popup .pB{ height:15px; line-height:normal; background:url(../images/dian.png) left -76px no-repeat;}
+.Popup .pC{ border-left:1px solid #b5b5b5;border-right:1px solid #b5b5b5; background-color:#f1f1f1; }
+.Popup .pC dt{ font-weight:bold; padding-left:25px; line-height:25px;background:url(../images/dian.png) center 24px no-repeat;}
+.Popup .pC dd a{ color:#444; padding-left:25px; font-size:12px; float:none; font-weight:normal; line-height:22px; height:auto;}
+.Popup .pC dd{ padding:3px 0px;}
+.Popup .pC dd a:hover{ background-image:none; color:red;}
+/*========页面头部end========*/
+
+/*========left menu start========*/
+
+
+/*====左导航一级菜单=============*/
+.leftMenu{width:100%;position:relative;}
+.firstMenu{ outline:none;position:relative; top:-1px;}
+.firstMenu a{padding-left:40px; display:block;*display:inline-block;*width:100%;overflow:hidden; position:relative;  font-weight:bold; font-size:14px; line-height:42px;}
+.firstMenu a b{ position:absolute; left:15px; top:12px;*top:14px;width:16px; height:16px;overflow: hidden; font-size:0px;line-height:16px;}
+.firstMenu a span{position:absolute; right:13px; top:12px;width:16px; height:16px;}
+/*====左导航一级菜单 end=============*/
+
+
+/*====左导航2级菜单=============*/
+.secondMenu{margin-left:20px; padding-top:1px; z-index:1000; *display:inline-block}
+.secondMenu s{ position:absolute; bottom:0px; left:-15px; width:20px; height:14px; *height:20px;overflow: hidden; font-size:0px;color:red; z-index:10;}
+.secondMenu a{ padding-left:20px; line-height:28px; margin:6px 0px 6px -1px; display:block; position:relative;}
+.secondMenu a b{position:absolute; right:10px; top:6px;*top:2px; height:15px; line-height:15px; font-weight:normal; color:#fff; text-align:center;}
+/*====左导航2级菜单 end=============*/
+
+
+/*====左导航滚动条=============*/
+.sBar{ width:4px; position:absolute; right:0px; z-index:100;}
+.sBar span{width:4px; background:#000; border-radius:4px;position:absolute; top:0; left:0; cursor:pointer;}
+.leftMain{position:relative; overflow:hidden;}
+.leftCont{position:absolute; top:0; left:0; width:209px;}
+/*====左导航滚动条 end=============*/
+
+
+/*========left menu end========*/
+.d_page{ text-align:center; margin-top:10px; height:25px; line-height:25px;}
+.d_page a, .d_page span{ display:inline-block; margin:0px 2px;}
+.d_page input.text{ width:30px; border:1px solid #dadada; text-align:center;}
+
+
+.footer{ border-top:1px solid #eaeaea; line-height:50px; text-align:center; width:width:85%; margin-left: auto; margin-right: auto;}
+
+/*========登录 start========*/
+.l_header{ width:1000px; margin:0px auto; padding:15px 0px; height:50px;}
+.l_header .l_nav{float:right; width:300px; color:#666;  text-align:right; font-family:"微软雅黑"; line-height:50px;}
+.l_header .l_nav a{ font-size:14px; color:#666; margin:0px 10px;}
+.l_header .l_nav a:hover{color:#000;}
+.l_box{ height:499px; background:url(../images/l_bg.jpg) center top no-repeat;}
+.sign_main{ height:499px; width:1000px; margin:0px auto; position:relative;}
+.sign_box{ border-radius:4px; overflow:hidden; background:url(../images/l_box_bg.png) left -25px repeat-x; padding:24px 34px; position:absolute; right:20px; top:75px; width:252px;}
+.sign_box h2{ font-family:"微软雅黑"; font-weight:normal; font-size:24px; line-height:30px; color:#fff; padding-bottom:5px;}
+.sign_box .login_item{ margin-top:10px; background-color:#f6fcff; height:42px; overflow:hidden; position:relative; z-index:100; padding-left:50px;}
+.sign_box .login_item b{ position:absolute; width:45px; height:42px; background:url(../images/l_button.jpg) no-repeat; left:0px; top:0px;}
+.sign_box .login_item b.user{ background-position:left bottom;}
+.sign_box .login_item b.password{ background-position:right bottom;}
+.sign_box .login_item b.code{background-position:-103px bottom;}
+.sign_box .login_item input{ border:0px none; background-color:transparent; padding:5px; height:32px; line-height:32px; font-size:14px; font-family:"微软雅黑"; color:#666; outline:none;}
+.sign_box input.l_btn{border:0px none; cursor:pointer; margin-top:15px; margin-bottom:8px; background:url(../images/l_button.jpg) 0px 0px no-repeat; height:38px; width:252px; overflow:hidden;}
+.sign_box .l_mm, .sign_box .l_mm a{ color:#fff; height:18px;}
+.sign_box .l_mm input{ vertical-align:middle;}
+.l_code{ margin-top:10px; margin-left:20px; height:42px; width:80px; background-color:#999;}
+.l_footer{ text-align:center; font-size:12px; color:#999; line-height:22px; margin:15px 0px;}
+/*========登录 end========*/
+
+.shadow{ padding:0px 2px 2px 0px; background-color:#eaeaea;}
+
+/*换肤*/
+.rs_body{ position:fixed; z-index:9999; width:100%; left:0px; top:0px; height:200%;/* background-color:rgba(0,0,0,0.2);*/ background:url(../images/skin_bg.png) repeat; *display:none;}
+.r_skin{ position:fixed; z-index:10000; *position:absolute; *border:1px solid #dadada; left:50%; margin-left:-240px; top:200px; background-color:#fff; border-radius:6px; overflow:hidden; box-shadow: 0px 0px 6px rgba(0,0,0,0.5);}
+.r_skin .rs_tit{ height:40px; background-color:#f4f4f4; position:relative; padding:0px 10px;}
+.r_skin .rs_tit h2{ font-weight:700; font-size:14px; line-height:40px;}
+.r_skin .rs_tit .r_delete{ border:0px none; width:16px; height:16px; top:10px;right:10px; cursor:pointer; position:absolute; background:url(../images/gif_delete.gif) no-repeat;}
+.rs_box{ padding:20px 10px; width:460px;}
+.rs_box li{ float:left; width:116px; margin:5px 18px; text-align:center;}
+.rs_box li .r_pic{ background-color:#000; position:relative; line-height:normal; margin-bottom:10px; cursor:pointer;}
+.rs_box li .r_pic b{ display:none; position:absolute; width:26px; height:26px; background:url(../images/check.png) no-repeat; bottom:10px; right:10px;}
+.rs_box li.r_current .r_pic img{filter:alpha(opacity=50); -moz-opacity:0.5; -khtml-opacity: 0.5; opacity: 0.5;}
+.rs_box li.r_current .r_pic b{ display:block;}
+
+/*找回密码*/
+.pass_input{position:relative;cursor:text;width: 253px; border:1px solid #DDDDDD ;height: 16px;line-height: 16px; outline: medium none; overflow: hidden; padding: 7px 0 7px 8px; color:#999;}
+.pass_mob{position:relative;width:108px; border:1px solid #aaa; height:22px;}
+.pass_input_msg{ color:#DA1111; margin-left:10px;}
+.pass_input_erro{border: 1px solid #da1111;}
+.b_Password{ padding:25px; position:relative;}
+.p_step li{ float:left; padding-left:10px; width:173px; background:url(../images/pass_bg.png) #eaf4fe 168px -40px no-repeat; height:35px; line-height:33px; font-size:16px; color:#277dd4; font-family:"微软雅黑";}
+.p_step li span{ font-size:20px; font-style:italic; margin-right:10px; font-weight:normal;}
+.p_step li.c_active{ background-position:168px 0px; background-color:#7ab7f3; color:#fff;}
+.p_step li.c_on{ background-position:168px -82px;}
+.p_step_detail p{ font-size:14px; margin-bottom:20px;}
+.pass_input_submit, .pass_input_code{ border:0px none; width:110px; height:35px; background:url(../images/pass_bg.png) -38px 0px no-repeat; color:#fff; text-align:center; font-size:14px; outline:none; cursor:pointer;}
+.pass_input_code{ background-position: -38px -40px; font-size:12px; height:25px;}
+.pass_input_code.pass_input_code_curr{background-position: -38px -67px;}
+.p_step_detail .step_3 td p{ display:block; float:left; width:66px; height:22px; color:#333; font-size:12px; line-height:22px; margin-right:5px; background-color:#eaf4fe; text-align:center;}
+.p_step_detail .step_3 td p.p_on{ background-color:red; color:#fff;}
+
+
+
+/*==============列表标题行和查询条标题行样式=============*/
+.title .title{border-bottom:0px none;}
+.title{ margin:0 0 5px; border-bottom:1px solid #e6e6e6;}
+.title th{padding:0 10px; text-align:left; font-size:12px; height:38px;font-weight:700; }
+.title th .icon{margin:0 5px 0 6px; float:left;}
+.title td{padding:0.7em 0.5em;  line-height:25px;}
+
+.title span input {border:1px solid #ccc; padding: 0 5px; height:23px; line-height:23px; width:110px; vertical-align:middle;}
+.title span select{border:1px solid #ccc;height:23px;  line-height:23px; width:110px; vertical-align:middle;}
+
+.title span.button input{border:0px none; height:25px; }
+.title span.button input.btn4{width:65px;}
+.title span.button input.btn2{width:55px;}
+.title span.button input.btnB2{width:83px; height:33px; }
+.title span.button input.btn6{width:89px;}
+.titletooffbtn{width:27px; height:20px; float:right; display:block; overflow:hidden;  text-indent:-9999em;}/*--收起表格--*/
+
+/*==============列表标题行和查询条标题行样式 end=============*/
+
+/*=======当前位置=======*/
+.location{height:38px; margin:0 0 5px; font-size:12px; line-height:38px; }
+.location .icon{width:32px; background:url(../images/public/titleicon.gif) 12px 10px no-repeat;}
+/*=======当前位置 end=======*/
+
+.list table,
+.list table td,
+.list table td th,
+.list2 table,
+.list2 table td{margin:0; padding:0; line-height:100%;}/*--子级表格不继承父级样式 101208修改--*/
+
+/*============列表========*/
+.list{margin-bottom:5px; font-size:12px;}
+.list th{height:33px; text-align:center; font-size:13px; font-weight:bold;padding:0px 5px;}
+.list td{padding:5px;  line-height:150%;}
+.list .tdBg{ text-align:right;}
+
+.list2{margin-bottom:5px; }/*--更浅的表格--*/
+.list2 td{padding:5px; line-height:150%;}
+.list2 .tdBg{ text-align:right;}
+
+.redA {color:red;}
+/*============列表 end========*/
+
+/*============表格内容超长自动显示...=============*/
+.aTable *{white-space:nowrap;}
+.aTable {table-layout:fixed; margin-bottom:0px !important;}
+.aTable td, .aTable td a{overflow:hidden;white-space:nowrap;text-overflow:ellipsis;-o-text-overflow:ellipsis;}
+/*============表格内容超长自动显示...=============*/
+
+
+/*============灰色表格========*/
+table .tableGray td{padding:3px; line-height:150%; }
+/*============灰色表格========*/
+
+
+/*==========弹出窗口下的操作区=========*/
+.bottomTable td{padding:5px;}
+/*==========弹出窗口下的操作区 end=========*/
+
+/*==========按钮=========*/
+.btnSo, .btn2, .btn3, .btn4, .btn5, .btn6, .btn7, .btn8, .btnB2, .btnB3, .btnB4, .btnB5{height:25px; border:0px none; font-size:12px;  cursor:pointer; font-family:"微软雅黑";}
+.btn_2{height:22px; border:0px none; font-size:12px; line-height:22px; overflow:hidden; display:inline-block; cursor:pointer; font-family:"微软雅黑";}
+/*--.btnSo{width:55px; padding-left:15px;}带小图标的搜索按钮--*/
+
+.btnSo,.btn2,.btn3{width:55px; }/*--适用于2、3个字--*/
+.btn_2{width:40px; }
+
+.btn4{width:65px;  }/*--适用于4个字--*/
+
+.btn5{width:77px; }/*--适用于5个字--*/
+
+.btn6{width:89px;  }/*--适用于6个字--*/
+
+.btn7{width:101px;}/*--适用于7个字--*/
+
+.btn8{width:113px;}/*--适用于8字--*/
+
+.btnB2, .btnB3, .btnB4, .btnB_2, .btnB_3, .btnB_4{width:83px; height:33px;  font-size:14px;}/*--大按钮，适用于2、3、4字--*/
+
+.btnB5,.btnB6,.btnB7, .btnB_5, .btnB_6, .btnB_7{width:103px; height:33px;  font-size:14px;}/*--大按钮，适用于5、6、7字--*/
+
+
+/*==========按钮 end=========*/
+/*=========翻页==========*/
+.pageDown{margin:5px 0 10px;}
+.pageDown td{padding:0px 10px;}
+.pageDown a{ display:inline-block; margin:0px 2px; border-radius:2px; width:40px; height:20px; text-align:center; line-height:20px; border:1px solid #aaa; color:#666;}
+.pageDown a.nextUp{ font-family:"宋体"; }
+.pageNum{width:30px; height:16px; }
+/*=========翻页 end==========*/
+
+/*=========快捷导航 start==========*/
+.qTit{ margin:20px 0px 10px 20px; font-size:14px;}
+.qTit input{border:0px none; width:16px; float:right; cursor:pointer; height:16px; margin:2px 10px 0px 0px;}
+.quickM{ border-top:1px solid #dae6f6;}
+.quickM li{height:40px; line-height:40px; background-color:#fff; position:relative;}
+.quickM li a{display:block; *display:inline-block; width:100%; color:#222; font-size:13px; padding-left:50px;}
+.quickM li a b{position:absolute; left:20px; top:10px;*top:12px; width:16px; height:16px; overflow:hidden; font-size:0px;}
+/*=========快捷导航 end==========*/
+
+/*==========二级标签=========*/
+.subTab2{ margin-left:10px;}
+.subTab ul{padding-top:5px; height:38px;}
+.subTab li {height:27px; margin-right:5px; padding-bottom:7px;float:left; display:inline;}
+.subTab li a {display:block; *display:inline-block; padding:0 10px;text-align:center;line-height:27px;overflow:hidden;outline:none; border-radius:4px;}
+.subTab li a:hover {font-weight:bold; }
+.subTab .others, .subTab .othersL{ display:none;}
+/*==========二级标签 end=========*/
+
+/*=======正文、查看发文、通知公告等页面样式======*/
+
+.viewText{ position:absolute;width:800px; margin:36px auto; overflow-y:auto;/*overflow-x:hidden;overflow-y:auto;*/height:expression((parseInt(document.body.clientHeight)-36)+"px"); font-size:12px;}
+.viewText h2{padding:10px 0; font-size:22px;  text-align:center; line-height:180%;}
+.viewText td, #propertyWnd td{font-size:12px;}
+.viewText .state{margin:5px 0; font-weight:bold; font-size:12px; }
+
+.viewText p{line-height:150%;}
+/*=======正文、查看发文、通知公告等页面样式 end======*/
+
+.tableH2{font-weight:bold; font-size:18px;  text-align:center; line-height:220%;color:red;}/*---居中标题--*/

@@ -1,0 +1,187 @@
+html {
+	font-size: 100px;
+}
+
+/**
+ * 导航栏
+ */
+#left_nav {
+	top: 0.64rem;
+}
+.layui-layout-admin .layui-header.nav-header {
+	background-color: rgb(255,255,255);
+	border-bottom: 0.04rem solid rgb(0,150,136);
+}
+.layui-layout-admin .layui-logo.nav-logo {
+	color: rgb(0,0,0);
+	font-size: 0.2rem;
+}
+.layui-nav .layui-nav-item .nav-a {
+	height: 0.6rem;
+	color: rgb(0,0,0);
+	padding-left: 0.4rem;
+}
+#nav_log_out {
+	padding-left: 0.2rem;
+}
+.layui-nav .layui-nav-item .nav-a > i.iconfont {
+	font-size: 0.2rem;
+	color: rgb(187,187,187);
+	position: absolute;
+	left: 0.16rem;
+}
+.layui-nav .layui-nav-item .nav-a:hover {
+	color: rgb(0,150,136);
+}
+
+/**
+ * 导航栏滑动按钮
+ */
+.layui-logo.nav-logo {
+	position: relative;
+}
+#nav_slide_btn {
+	font-size: 0.25rem;
+	position: absolute;
+    color: rgb(153,153,153);
+    cursor: pointer;
+}
+#nav_slide_btn:hover {
+	color: rgb(0,150,136);
+}
+
+/**
+ * 面包屑
+ */
+.head-breadcrumb {
+	display: block;
+	height: 0.36rem;
+	line-height: 0.36rem;
+	padding: 0 0.15rem;
+	color: rgb(153,153,153);
+	background-color: rgb(242,242,242);
+	border-bottom: 0.01rem solid rgb(226,226,226);
+}
+.head-breadcrumb > a {
+	color: rgb(242,242,242);
+}
+.head-breadcrumb > a:hover {
+	color: rgb(0,150,136)!important;
+}
+.head-breadcrumb > i.iconfont {
+	font-size: 0.18rem;
+	position: relative;
+	top: 0.01rem;
+	margin-right: 0.05rem;
+}
+
+/**
+ * 未认证图标
+ */
+.layui-nav .layui-nav-item .nav-a > i.iconfont.un-approve-icon {
+	color: rgb(255,184,0);
+}
+
+/**
+ * 数据表格
+ */
+.layui-table th {
+	text-align: center;
+}
+.layui-table-body.layui-table-main > table > tbody {
+	text-align: center;
+}
+
+/**
+ * 数据表格支付方式、支付状态、认证状态样式
+ */
+.alipay {
+	color: rgb(1,170,237);
+}
+.trade-success,
+.wechatpay {
+	color: rgb(95,184,120);
+}
+.un-check,
+.trade-fail {
+	color: rgb(255,87,34);
+}
+.checking {
+	color: rgb(255,184,0);
+}
+
+/**
+ * 数据表格中的“审核中”按钮
+ */
+.layui-btn.layui-btn-warm.layui-btn-small.QRcode-checking {
+	cursor: default;
+}
+
+/**
+ * 表格内容对齐
+ */
+.text-align-center {
+	text-align: center;
+}
+
+/**
+ * 去除layui-body的margin-bottom
+ */
+.layui-layout-admin .layui-body {
+	bottom: 0;
+}
+
+/**
+ * 数据表格上方“交易总额 交易总笔数”等相同样式
+ */
+.trade-message > div.layui-inline {
+ 	font-size: 0.16rem;
+ 	color: rgb(53,53,53);
+ 	margin-right: 0.2rem;
+}
+
+/**
+ * 渠道商-分润结算-流程
+ */
+#process_div {
+	margin: 0.3rem 0;
+}
+.defined-timeline-item {
+	padding-bottom: 0.4rem;
+}
+.defined-timeline-item .layui-timeline-title {
+	margin-bottom: 0.3rem;
+}
+#issue_invoice_form + p {
+	position: relative;
+	top: -0.25rem;
+}
+.layui-timeline-title {
+	vertical-align: top;
+}
+.layui-timeline-title + .layui-inline {
+	margin-left: 0.5rem;
+}
+/**
+ * 开具发票
+ */
+#issue_invoice_form .layui-input {
+	height: 0.31rem;
+}
+/**
+ * 超管-分润审核-分润进度-打印凭条按钮
+ */
+.layui-timeline-title + .layui-inline.upload-print-btn {
+	margin-left: 0.87rem;
+}
+/*上传发票图片按钮*/
+#send_invoice_btn {
+	margin-top: 0.1rem;
+}
+/**
+ * 禁用
+ */
+.layui-timeline-item .layui-timeline-content.text-disabled,
+.layui-timeline-item .layui-timeline-content.text-disabled .layui-timeline-title {
+	color: rgb(210,210,210)!important;
+}

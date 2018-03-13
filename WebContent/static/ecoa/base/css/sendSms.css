@@ -1,0 +1,23 @@
+
+
+
+
+/*发送短信*/
+.m_left { margin-top:73px;}
+.m_right { margin-top:80px; width:258px; margin-left:14px; border:1px solid #b8d6ee; overflow:auto; height:454px;}
+.r_menu {height:40px; border-bottom:1px solid #b8d6ee; overflow:auto; background:#eaf3fc;}
+.r_menu h3 { font-size:14px; color:#0e8ee7; line-height:34px;background:url(../images/menu.png) no-repeat 0 center; padding-left:30px; margin-left:10px; float:left;}
+.r_menu a { width:12px; height:12px; display:block; float:left; margin:12px;}
+.r_menu span { float:left; line-height:34px; font-size:16px;}
+.r_menu .prev { margin-left:10px;}
+.r_menu .next {}
+
+.page { height:32px; background:#f2f6f9; border-bottom:1px solid #b8d6ee; overflow:auto;}
+.page a { height:22px; padding:0 10px; border:1px solid #a6a6a6; display:block; float:left; margin-top:4px; margin-left:10px;}
+.page select { height:24px; margin-top:4px; float:left; margin-left:10px;}
+
+.m_list { padding:0 10px; font-size:12px; line-height:16px;}
+.m_list ul {}
+.m_list ul li { padding:14px 0; border-bottom:1px solid #dde7ff;}
+.m_list ul li a {}
+.m_list ul li a:hover {}

@@ -1,0 +1,52 @@
+
+/*
+-------------------------------
+Site:       易臣OA系统 左侧菜单样式
+Updated:     2010-11-25
+Updated by:
+-------------------------------
+*/
+
+
+/*=======CSS reset start=======*/
+body{margin:0; padding:0; background:#fff; font-size:12px;}
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,button,textarea,p,blockquote,th,td{margin:0;padding:0; }
+table{border-collapse:collapse; border-spacing:0; font-family:"宋体"; border:none;}
+fieldset,img{border:none;}
+address,caption,cite,code,dfn,em,strong,th,var{font-style:normal; font-weight:normal;}
+ol,ul,li{list-style-type :none;}
+caption,th{text-align:left;}
+q:before,q:after{content:'';}
+abbr,acronym{border:0;}
+a{text-decoration:none;}
+/*=======CSS reset end=======*/
+
+/*==========左侧=========*/
+.leftBody{ font-size:12px;}
+/*==========左侧=========*/
+
+
+/*====左导航一级菜单=============*/
+.firstMenu{width:100%; height:33px;position:relative; margin-top:-1px;}
+.firstMenu a{padding-left:30px; display:block;overflow:hidden;  font-weight:bold; font-size:12px; line-height:25px;}
+.firstMenu a b{ position:absolute; left:7px; width:16px; height:16px;top:8px; background-color:#000;}
+.firstMenu .wArrow{width:9px; height:5px; margin:11px 12px 0 0; display:block; float:right; display:none; }
+/*====左导航一级菜单 end=============*/
+
+
+/*====左导航2级菜单=============*/
+
+.secondMenu a{padding-left:30px; line-height:35px;  border-bottom:1px dashed #eaeaea; display:block;}
+
+.secondMenu a.sel{font-weight:700; background-color:#f8f8f8;border-bottom:1px solid #eaeaea;}
+/*====左导航2级菜单 end=============*/
+
+
+/*====左导航3级菜单=============*/
+.secondMenu a.on, .secondMenu a.menu{padding-left:30px;  line-height:33px;font-weight:bold;}
+.thirdMenu{margin:0 0 0 22px}
+.thirdMenu a{padding-left:10px;  line-height:28px; border:0px none;}
+
+/*====左导航3级菜单 end=============*/
+
+

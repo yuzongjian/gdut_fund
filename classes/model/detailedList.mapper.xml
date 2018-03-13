@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="model.detailedList.mapper">
+	<select id="checkTypeOfYear" resultType="int" parameterType="map">
+		select count(*) from yd_detailed_list
+	</select>
+	<select id="selectDetailedListById" resultType="model.DetailedList" parameterType="string">
+		select * from yd_detailed_list where id=#{id}
+	</select>
+	<select id="selectAllMyList" resultType="model.DetailedList" parameterType="map">
+		select * from yd_detailed_list 
+		<where>
+			<if test="user_id!=null">
+				user_id=#{user_id}
+			</if>
+			<if test="department!=null">
+				department like CONCAT(CONCAT('%',#{department}),'%')
+			</if>
+		</where> 
+	</select>
+	<select id="selectMyList"  resultType="model.DetailedList" parameterType="map">
+		select * from yd_detailed_list
+		 <where> 
+		 	<if test="user_id!=null">
+		 		user_id=#{user_id}
+		 	</if>
+		 	<if test="department!=null">
+		 		department like CONCAT(CONCAT('%',#{department}),'%')
+		 	</if>
+		 	<if test="name!=null">
+		 		and name like CONCAT(CONCAT('%',#{name}),'%')
+		 	</if>
+		 	<if test="type!=null" >
+		 		and type=#{type}
+		 	</if>
+		 </where>
+	</select>
+	<insert id="insertDetailedList" parameterType="model.DetailedList" >
+		insert into yd_detailed_list values(#{id},#{type},#{science_code},#{apply_code},#{applicant},#{name},#{version},#{department},now(),#{user_id})
+	</insert>
+	<update id="updateDetailedList" parameterType="model.DetailedList">
+		update yd_detailed_list set name=#{name},type=#{type},department=#{department},applicant=#{applicant},science_code=#{science_code},apply_code=#{apply_code},version=#{version} 
+		<where>
+		id=#{id} 
+		</where> 
+	</update>
+	<delete id="deleteDetailedList" parameterType="map">
+		delete from yd_detailed_list where id=#{id}
+		<if test="user_id!=null">
+		 and user_id=#{user_id}
+		 </if>
+	</delete>
+	
+	<select id="selectForInsert" parameterType="map" resultType="model.DetailedList">
+		SELECT * FROM yd_detailed_list 
+		<where>
+		<if test="user_id!=null">
+			user_id=#{user_id} AND 
+		</if>	
+		  TYPE=#{type} AND  create_time&lt;#{bigger_time} AND create_time&gt;#{smaller_time}
+		 </where>
+	</select>
+</mapper>

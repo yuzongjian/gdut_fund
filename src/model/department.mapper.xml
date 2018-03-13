@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="model.department.mapper">
+	<select id="select"   resultType="model.Department">
+		select * from yd_department 
+	</select>
+	<select id="selectAllDepartment" resultType="model.Department">
+		select * from yd_department
+	</select>
+	<select id="selectDepartmentById" resultType="model.Department" parameterType="string">
+		select * from yd_department where dept_id=#{dept_id}
+	</select>
+	<select id="selectDepartmentByName" resultType="model.Department" parameterType="map">
+		select * from yd_department 
+		<where>
+			<if test="dept_name!=null">
+				 dept_name like  CONCAT(CONCAT('%',#{dept_name}),'%')
+			</if>		
+		</where>
+	</select>
+	<insert id="insertDepartment" parameterType="model.Department" >
+		insert into yd_department values(#{dept_id},#{dept_name})
+	</insert>
+	<update id="updateDepartmentById" parameterType="model.Department">
+		update yd_department set dept_name=#{dept_name} where dept_id=#{dept_id}
+	</update>
+	<delete id="deleteDepartment" parameterType="string">
+		delete from yd_department where dept_id=#{dept_id}
+	</delete>
+</mapper>

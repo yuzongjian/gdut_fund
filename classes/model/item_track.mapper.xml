@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="model.item_track.mapper">
+  <select id="selectByDept" resultType="int" parameterType="map">
+  	select count(*) from yd_item_track 
+  	<where>
+  	department like CONCAT(CONCAT('%',#{department}),'%')
+  	<if test="firstYear!=null">
+  		and apply_year &gt;= #{firstYear}
+  	</if>
+  	<if test="secondYear!=null">
+  		and apply_year &lt;= #{secondYear}
+  	</if>
+  	</where>
+  </select>
+  <select id="SelectAll"   resultType="model.Item_track" parameterType="map">
+		select * from yd_item_track 
+	<where> 
+    <if test="title != null">
+        title like  '%${title}%'      
+    </if> 
+    <if test="apply_year!= null">
+        AND apply_year =#{apply_year}
+    </if>
+    <if test="user_id!= null">
+        AND user_id =#{user_id}
+    </if>
+  </where>
+	</select>
+	
+	<select id="SelectById" resultMap="yd_item_track">
+		 select * from yd_item_track where id=#{id}
+	</select>
+	<resultMap type="model.Item_track" id="yd_item_track">
+		<!-- column 是一端在多端的外键 写的是一端的主键的列名 -->
+		<collection property="list" javaType="ArrayList" ofType="Item_track_add"
+		column="id" select="model.item_track.mapper.getItem_track_add"></collection>
+	</resultMap>
+	
+	<select id="getItem_track_add" resultType="model.Item_track_add">
+	     select * from yd_item_track_add where track_id=#{id}
+	</select>
+
+	<update id="Updata" parameterType="model.Item_track" >
+	  update yd_item_track set name=#{name},department=#{department},email=#{email},research=#{research},team=#{team},team_leader=#{team_leader},b_expert=#{b_expert},s_expert=#{s_expert},advice=#{advice},title=#{title},apply_field=#{apply_field},old_apply=#{old_apply},apply_year=#{apply_year},join_year=#{join_year},major_content=#{major_content},sci_first_count=#{sci_first_count},sci_second_count=#{sci_second_count},ei_count=#{ei_count},invent_count=#{invent_count},invent_accredit_count=#{invent_accredit_count},utility_count=#{utility_count},utility_accredit_count=#{utility_accredit_count},situation=#{situation},team_basic=#{team_basic},telephone=#{telephone} where id=#{id}
+	  
+	</update> 
+	
+	<delete id="DeleteById">
+	  delete from yd_item_track where id=#{id}
+	</delete>
+		
+	<insert id="addItem_track" parameterType="model.Item_track" >
+	insert into yd_item_track values(#{id},#{name},#{department},#{telephone},#{email},#{research},#{team},#{team_leader},#{b_expert},#{s_expert},#{advice},#{user_id},#{title},#{apply_field},#{old_apply},#{apply_year},#{join_year},#{major_content},#{sci_first_count},#{sci_second_count},#{ei_count},#{invent_count},#{invent_accredit_count},#{utility_count},#{utility_accredit_count},#{situation},#{team_basic})
+	</insert>
+</mapper>

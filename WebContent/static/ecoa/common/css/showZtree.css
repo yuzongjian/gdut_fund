@@ -1,0 +1,27 @@
+@charset "utf-8";
+
+
+
+/* 	
+使用说明
+	使用显示/隐藏树形结构操作  先引入 对应的showZtree.js 和 showZtree.css
+		在页面中新增 
+		<div  id="lookCataListRight" >
+			<a href="javascript:void(0)" onclick="showTreeDiv('2')" >&lt;</a>
+			</div>
+		<div  id="lookCataListleft">
+			<a href="javascript:void(0)" onclick="showTreeDiv('1')" >&gt;</a>
+		</div>
+		
+	如果不使用显示/隐藏树形结构操作
+	//js文件中会先显示 ，在这里会改为 不使用此功能
+	hideTreeDiv();
+*/
+	
+/* 
+*显示/隐藏树形结构
+*/
+#lookCataListRight {position:absolute; left:240px;background-position:-123px -85px !important; top:300px;height:100px; width:20px;}
+#lookCataListleft {position:absolute; left:5px; background-position:-123px -85px !important;top:300px; height:100px; width:20px;}
+
+
